@@ -1,0 +1,122 @@
+/* header nav style */
+.contents_nav{
+    background: #dddddd;
+    min-height: 40px;
+    overflow: hidden;
+}
+.contents_nav .left{
+    float: left;
+    #margin-left: 1em;
+}
+.contents_nav .left li{
+    #border-bottom: 1px solid #f2f2f2;
+    font-size: 14px;
+    float: left;
+}
+
+.contents_nav .left .active{
+    background: #ff7f00;
+}
+
+.contents_nav .left .active a{
+    color: #ffffff;
+    cursor: default;
+}
+
+.contents_nav .left li a{
+    display: block;
+
+    line-height: 40px;
+    color: #656561;
+    font-weight: bold;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-top: 0.5px solid #ffffff;
+    border-left: 0.5px solid #ffffff;
+    width: 110px;
+    box-sizing: border-box;
+}
+
+.contents_nav .left li a:hover{
+    background: #cccccc;
+}
+
+.contents_nav .toggle-nav{
+    display: none;
+}
+
+.contents_nav .nav-mobile style{
+    display: block;
+}
+
+@media only screen and (max-width: 770px){
+    .contents_nav{
+        #border-bottom: 1px solid rgba(0,0,0,0.1);
+        background: #ffffff;
+    }
+
+    .contents_nav .toggle-nav{
+        display: block;
+        padding: 0px 30px;
+        line-height: 30px;
+        color: #b7b6b6;
+    }
+
+
+    .contents_nav .toggle-nav:after{
+        content: ' Menu';
+    }
+
+
+    .contents_nav .nav-mobile{
+        display: none;
+    }
+
+    .contents_nav .style-mobile{
+        width : 100%;
+        border: 1px solid #f2f2f2;
+        z-index: 99;
+    }
+
+    .contents_nav .style-mobile li{
+        display: block;
+        width: 100%;
+    }
+
+    .contents_nav .left{
+        #display: none;
+        float: none;
+        margin: 0em;
+    }
+
+    .contents_nav .left li a{
+        display: block;
+
+        line-height: 40px;
+        color: #656561;
+        font-weight: bold;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav .right li{
+        #border-bottom: 1px solid #f2f2f2;
+        font-size: 13px;
+        float: left;
+    }
+
+    .nav .right li a{
+        display: block;
+        padding: 0px 10px;
+        line-height: 50px;
+        color: #b7b6b6;
+        #font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 771px){
+    .contents_nav .nav-mobile {
+        display:block !important;
+    }
+}

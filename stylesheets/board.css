@@ -1,0 +1,1003 @@
+/* Board */
+
+.board-search input{
+    height: 100%;
+    width: 100%;
+    #background: #2b303b;
+    border: 1px solid;
+    font-size: 10pt;
+    color: #656561;
+    padding: 0 45px;
+    box-sizing: border-box;
+}
+.board-search .icon {
+    position: absolute;
+    top:43%;
+    right: 40px;
+    height: 100%;
+    z-index: 1;
+    color: #656561;
+}
+
+.new-board-btn {
+    height: 100%;
+    width: 100%;
+    background: #325faa;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.new-board-btn:hover {
+    height: 100%;
+    width: 100%;
+    background: #325fbb;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.new-board-pop-btn {
+    height: 48.67px;
+    width: 100%;
+    /*background: #656561;*/
+    background: #ffffff;
+    /*color: #ffffff;*/
+    color: #000000;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    /*border-top: 1px solid #cccccc;*/
+    border: 1px solid #cccccc;
+}
+
+.new-board-pop-btn:hover {
+    height: 48.67px;
+    width: 100%;
+    background: #545451;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    border-top: 1px solid #cccccc;
+}
+
+.control_bar {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.search-option {
+    flex: 1;
+    -webkit-flex: 1;
+    padding: 20px 20px 20px 0px;
+}
+
+.search-option select {
+    color: #656561; border: 1px solid; width: 100%; height: 100%; padding: 15px; box-sizing: border-box;
+}
+
+.board-search {
+    flex: 1;
+    -webkit-flex: 1;
+    padding: 20px; position: relative;
+}
+
+.new-board {
+    -webkit-flex: 1;
+    flex: 1; padding: 20px 0px 20px 20px;
+}
+
+.contents-list .contentsItem {
+    position: relative;
+    min-height: 100px;
+    border: 1px solid #ececea;
+    text-align: left;
+    cursor: pointer;
+}
+
+.contents-answering-list .contentsItem{
+    position: relative;
+    min-height: 50px;
+    border: 1px solid #ececea;
+    text-align: left;
+    padding: 30px;
+}
+
+.contents-answering-list .answered{
+    position: relative;
+    min-height: 100px;
+    border: 1px solid #ececea;
+    text-align: left;
+    background: #ececea;
+}
+
+.contents-list .contentsItem:hover {
+    position: relative;
+    min-height: 100px;
+    border: 1px solid #ececea;
+    text-align: left;
+    background: #ff7f00;
+}
+
+.contentsItem .sub{
+    padding: 30px 100px 0 30px;
+    line-height: 1.5;
+}
+
+.contentsItem .sub .user-name{
+    font-size: 16px;
+    color: #325faa;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.contentsItem .sub .date{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.view-count {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.contentsItem .title{
+     padding: 0 125px 0 30px;
+     line-height: 1.5;
+     font-size: 18px;
+ }
+
+.contentsItem .question-info{
+    line-height: 1.5;
+}
+
+.contentsItem .question-info .user-name{
+    font-size: 16px;
+    color: #325faa;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.contentsItem .question-info .date{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.contentsItem .student-answer{
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.contentsItem .scoring textarea{
+    border: 1px solid #b7b6b6;
+    box-sizing: border-box;
+    font-size: 10pt;
+    color: #63717f;
+    padding: 10px 25px;
+    margin: 10px 0 0 0;
+    width: 100%;
+    resize: none;
+}
+
+.contentsItem .scoring input[type="number"] {
+    border: 1px solid #b7b6b6;
+    box-sizing: border-box;
+    font-size: 10pt;
+    color: #63717f;
+    padding: 10px 25px;
+    margin: 10px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+.contentsItem .scoring input[type="submit"],
+.contentsItem .scoring input[type="button"]{
+    box-sizing: border-box;
+    font-size: 10pt;
+    color: #ffffff;
+    padding: 10px 25px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background: #325faa;
+}
+
+.contentsItem .scoring input[type="submit"]:hover,
+.contentsItem .scoring input[type="button"]:hover{
+    box-sizing: border-box;
+    font-size: 10pt;
+    color: #ffffff;
+    padding: 10px 25px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background: #325fbb;
+}
+
+.contentsItem .scoring .comments{
+    border: 1px solid #b7b6b6;
+    box-sizing: border-box;
+    font-size: 10pt;
+    color: #63717f;
+    padding: 10px 25px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* Board Contents */
+
+.contents-list .contents{
+    position: relative;
+    min-height: 100px;
+    border: 1px solid #ececea;
+    text-align: left;
+}
+
+.contents .sub{
+    padding: 30px 100px 0 30px;
+    line-height: 1.5;
+}
+
+.contents .sub .user-name{
+    font-size: 16px;
+    color: #325faa;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.contents .sub .date{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.contents .title{
+    padding: 0 125px 0 30px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.contents .cont{
+    padding: 27px 30px 22px 30px
+}
+
+.contents .reple-section{
+    padding: 27px 30px 22px 30px
+}
+
+.contents .reple-section .reple-formarea{
+    padding: 20px;
+    border-top: 1px solid #d9d9d7;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+
+.contents .reple-section .reple-formarea textarea{
+    width:100%;
+    height: 80px;
+    margin: 20px 0px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contents .reple-section .reple-formarea select{
+    width:100%;
+    height: 40px;
+    margin: 20px 0px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contents .reple-section .reple-formarea input[type=file]{
+    width: 100%;
+    margin: 10px 0px 0 0;
+    box-sizing: border-box;
+}
+
+.contents .reple-section .reple-formarea input[type=button]{
+    height: 30px;
+    /*width: 100%;*/
+    width: 150px;
+    #background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    margin: 10px 0px 0px 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    float: right;
+}
+
+.contents .reple-section .reple-formarea input[type=button]:hover{
+    height: 30px;
+    /*width: 100%;*/
+    width: 150px;
+    background: #cccccc;
+    color: #000000;
+    cursor: pointer;
+    margin: 10px 0px 0px 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    float: right;
+}
+
+.contents .reple-section .reple-formarea input[type=submit]{
+    height: 30px;
+    /*width: 100%;*/
+    width: 150px;
+    background: #325faa;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px 0px 0px 10px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.contents .reple-section .reple-formarea input[type=submit]:hover{
+    height: 30px;
+    /*width: 100%;*/
+    width: 150px;
+    background: #325fbb;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px 0px 0px 10px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.contents .reple-section .reple-area .reple{
+    position: relative;
+    min-height: 100px;
+    border: 1px solid #ececea;
+    text-align: left;
+}
+
+.contents .reple-section .reple-area .reple .sub{
+    /*padding: 20px 100px 0 30px;*/
+    padding: 20px 100px 0 70px;
+    line-height: 1.5;
+}
+
+.contents .reple-section .reple-area .reple .sub .user-name{
+    font-size: 16px;
+    color: #325faa;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.contents .reple-section .reple-area .reple .sub .date{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.contents .reple-section .reple-area .reple .cont{
+    padding: 0 125px 20px 70px;
+    line-height: 1.5;
+    font-size: 16px;
+    word-break: break-all;
+    position: relative;
+}
+
+.reple .reply-area {
+    margin-top: -15px; font-size: 14px; padding-left: 70px; padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.reple .reply-area .reply-formarea .control {
+    width: 100%;
+    display: inline-block;;
+}
+
+.reple .reply-area .reply-formarea input[type=text] {
+    border: 1px solid #dddddd;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.reple .reply-area .reply-formarea textarea {
+    border: 1px solid #dddddd;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.reple .reply-area .reply-formarea input[type=button]{
+    padding: 5px;
+    box-sizing: border-box;
+    float: right;
+    padding: 10px 16px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.reple .reply-area .reply-formarea input[type=submit]{
+    padding: 5px;
+    box-sizing: border-box;
+    float: right;
+    padding: 10px 16px;
+    background: #325faa;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.reple .reply-area .reply-formarea .input-area{
+    padding: 5px 0;
+}
+
+.reple .reply-area .show-reply{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.reple .reply-area .reply{
+    margin-top: 5px;
+}
+
+.reple .reply-area .reply .reply-sub .user-name {
+    color: #325faa;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.back {
+    padding: 10px 10px 10px 0px;
+}
+
+.back-btn {
+    height: 40px;
+    width: 150px;
+    background: #325faa;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    height: 40px;
+    width: 150px;
+    background: #325fbb;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.Addtional_Material, .Mission {
+    padding: 10px 0px 10px 10px;
+}
+
+.control_bar .additional_menu {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.Addtional_Material .btn, .Mission .btn {
+    height: 50px;
+    width: 150px;
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid #dddddd;
+}
+
+.Addtional_Material .btn:hover, .Mission .btn:hover {
+    height: 50px;
+    width: 150px;
+    background: #325fbb;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.Addtional_Material .active, .Mission .active {
+    height: 50px;
+    width: 150px;
+    background: #325faa;
+    color: #ffffff;
+    cursor: default;
+}
+
+.Addtional_Material .active:hover, .Mission .active:hover {
+    height: 50px;
+    width: 150px;
+    background: #325fbb;
+    color: #ffffff;
+    cursor: default;
+}
+
+.action {
+    position: absolute; top: 0; right: 0; text-align: center; padding-right: 20px; box-sizing: border-box;
+}
+
+.action .reple {
+    float: right; width: 60px; padding: 25px 0 0 0; box-sizing: border-box;
+}
+
+.action .good {
+    float: right; width: 60px; padding: 25px 0 0 0; box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.action .active {
+    color: #ff7f00;
+}
+
+.is_pass{
+    height: 45px; position: absolute; top: 0; right: 0; text-align: center; box-sizing: border-box;
+}
+
+.is_pass a{
+    margin-left: 1px; float: left; padding: 6px 12px; line-height: 1.42857; text-decoration: none; border: 1px solid #dddddd;
+    cursor: pointer;
+    height: 25px;
+}
+
+.is_pass .success:hover{
+    margin-left: 1px; float: left; padding: 6px 12px; line-height: 1.42857; text-decoration: none; border: 1px solid #dddddd;
+    background: blue;
+    color: #ffffff;
+    cursor: pointer;
+    height: 25px;
+}
+
+.is_pass .success[active='true']{
+    margin-left: 1px; float: left; padding: 6px 12px; line-height: 1.42857; text-decoration: none; border: 1px solid #dddddd;
+    background: blue;
+    color: #ffffff;
+    cursor: pointer;
+    height: 25px;
+}
+
+.is_pass .fail:hover{
+    margin-left: 1px; float: left; padding: 6px 12px; line-height: 1.42857; text-decoration: none; border: 1px solid #dddddd;
+    background: red;
+    color: #ffffff;
+    cursor: pointer;
+    height: 25px;
+}
+
+.is_pass .fail[active='true']{
+    margin-left: 1px; float: left; padding: 6px 12px; line-height: 1.42857; text-decoration: none; border: 1px solid #dddddd;
+    background: red;
+    color: #ffffff;
+    cursor: pointer;
+    height: 25px;
+}
+
+.declaration,
+.modify,
+.delete{
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.declaration:hover {
+    font-size: 14px;
+    cursor: pointer;
+    color: #325faa;
+}
+.declaration:hover,
+.modify:hover,
+.delete:hover{
+    font-size: 14px;
+    cursor: pointer;
+    color: #325faa;
+}
+
+/* Board insert */
+.board-formarea{
+    padding: 20px;
+    border-top: 1px solid #d9d9d7;
+    background: #f1f1f1;
+    text-align: left;
+    overflow: hidden;
+}
+
+.board-formarea input[type=text]{
+    width:100%;
+    height: 40px;
+    margin: 20px 0px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board-formarea input[type=number]{
+    width:100%;
+    height: 40px;
+    margin: 20px 0px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board-formarea select{
+    width:100%;
+    height: 40px;
+    margin: 20px 0px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board-formarea textarea{
+    width:100%;
+    height: 80px;
+    margin: 20px 0px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board-formarea input[type=file]{
+    #width: 100%;
+    margin: 10px 0px 0 0;
+    box-sizing: border-box;
+}
+
+.registered-file{
+    line-height: 1.5;
+}
+
+#board-attached-file .item{
+    clear: both;
+}
+
+#board-attached-file .wrapper{
+    width: 265px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+}
+
+.board-formarea input[type=submit]{
+    height: 40px;
+    /*width: 100%;*/
+    width: 150px;
+    background: #325faa;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px 0px 0 0;
+    box-sizing: border-box;
+    float: right;
+}
+
+.board-formarea input[type=submit]:hover{
+    height: 40px;
+    /*width: 100%;*/
+    width: 150px;
+    background: #325fbb;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px 0px 0 0;
+    box-sizing: border-box;
+    float: right;
+}
+
+.board-formarea #btnAddFile{
+    margin-right: 6px; float: left; padding: 6px 12px; line-height: 1.42857; text-decoration: none; border: 1px solid #dddddd;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 122px;
+    box-sizing: border-box;
+    text-align: center;
+    box-sizing: border-box;
+    height: 30px;
+}
+
+.board-formarea #btnAddFile:hover{
+    margin-right: 6px; float: left; padding: 6px 12px; line-height: 1.42857; text-decoration: none; border: 1px solid #dddddd;
+    background: #656561;
+    color: #ffffff;
+    cursor: pointer;
+    width: 122px;
+    box-sizing: border-box;
+    text-align: center;
+    box-sizing: border-box;
+    height: 30px;
+}
+
+#view-more-btn{
+    height: 30px;
+    width: 100%;
+    #background: #325faa;
+    background: #ff7f00;;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+#view-more-btn:hover{
+    height: 30px;
+    width: 100%;
+    #background: #325fbb;
+    background: #ee6f11;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.attached-file img {
+    width: 100%;
+}
+
+.fileBox {
+    margin-top: 5px;
+}
+.fileBox .fileName {
+    display:inline-block;
+    width:190px;
+    height:30px;
+    padding-left:10px;
+    margin-right:5px;
+    line-height:30px;
+    border:1px solid #aaa;
+    background-color:#fff;
+    vertical-align:middle
+}
+.fileBox .btn_file {
+    display:inline-block;
+    border:1px solid #dddddd;
+    width:120px;height:30px;
+    font-size: 12px;
+    line-height:30px;
+    text-align:center;
+    vertical-align:middle;
+    cursor: pointer;
+}
+
+.fileBox .btn_file:hover {
+    background: #656561;
+    color: #ffffff;
+}
+
+.fileBox input[type="file"] {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    border:0
+}
+
+.fileName {
+    white-space: nowrap;
+    width: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #000000;
+    display: inline-block;
+}
+
+#board-attached-file img {
+    width: 100%;
+}
+
+#keyword-view {
+    color: #325faa;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 770px){
+
+    .contentsItem .title{
+        padding: 10px 10px 15px;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    .board-search input{
+        height: 100%;
+        width: 100%;
+        #background: #2b303b;
+        border: 1px solid;
+        font-size: 10pt;
+        color: #656561;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .board-search .icon {
+        position: absolute;
+        top:43%;
+        right: 40px;
+        height: 100%;
+        z-index: 1;
+        color: #656561;
+    }
+
+    .new-board-btn {
+        height: 100%;
+        width: 100%;
+        background: #325faa;
+        color: #ffffff;
+        padding: 20px;
+    }
+
+    .control_bar {
+        display: block;
+    }
+
+    .search-option {
+        -webkit-flex: 1;
+        flex: 1; padding: 10px;
+    }
+
+    .search-option select {
+        color: #656561; border: 1px solid; width: 100%; height: 100%; padding: 15px; box-sizing: border-box;
+    }
+
+    .board-search {
+        flex: 1; padding: 10px; position: relative;
+        -webkit-flex: 1;
+    }
+
+    .new-board {
+        flex: 1; padding: 10px;
+        -webkit-flex: 1;
+    }
+
+    .action {
+        position: absolute; top: 0; right: 0; text-align: center; padding-right: 0px; box-sizing: border-box;
+    }
+
+    .Addtional_Material, .Mission {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .control_bar .additional_menu {
+        position: relative;
+        right: 0px;
+        display: block;
+    }
+
+    .Addtional_Material .btn, .Mission .btn {
+        height: 50px;
+        width: 100%;
+        background: #ffffff;
+        cursor: pointer;
+        border: 1px solid #dddddd;
+    }
+
+    .Addtional_Material .btn:hover, .Mission .btn:hover {
+        height: 50px;
+        width: 100%;
+        background: #325fbb;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .Addtional_Material .active, .Mission .active {
+        height: 50px;
+        width: 100%;
+        background: #325faa;
+        color: #ffffff;
+        cursor: default;
+    }
+
+    .Addtional_Material .active:hover, .Mission .active:hover {
+        height: 50px;
+        width: 100%;
+        background: #325fbb;
+        color: #ffffff;
+        cursor: default;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 500px){
+
+    .contentsItem .title{
+        padding: 10px 10px 15px;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    .board-search input{
+        height: 100%;
+        width: 100%;
+        #background: #2b303b;
+        border: 1px solid;
+        font-size: 10pt;
+        color: #656561;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .board-search .icon {
+        position: absolute;
+        top:43%;
+        right: 40px;
+        height: 100%;
+        z-index: 1;
+        color: #656561;
+    }
+
+    .new-board-btn {
+        height: 100%;
+        width: 100%;
+        background: #325faa;
+        color: #ffffff;
+        padding: 20px;
+    }
+
+    .control_bar {
+        display: block;
+    }
+
+    .search-option {
+        flex: 1; padding: 10px;
+        -webkit-flex: 1;
+    }
+
+    .search-option select {
+        color: #656561; border: 1px solid; width: 100%; height: 100%; padding: 15px; box-sizing: border-box;
+    }
+
+    .board-search {
+        flex: 1; padding: 10px; position: relative;
+        -webkit-flex: 1;
+    }
+
+    .new-board {
+        flex: 1; padding: 10px;
+        -webkit-flex: 1;
+    }
+
+    .action {
+        position: absolute; top: 0; right: 0; text-align: center; padding-right: 0px; box-sizing: border-box;
+    }
+
+    .Addtional_Material, .Mission {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .control_bar .additional_menu {
+        position: relative;
+        right: 0px;
+        display: block;
+    }
+
+    .Addtional_Material .btn, .Mission .btn {
+        height: 50px;
+        width: 100%;
+        background: #ffffff;
+        cursor: pointer;
+        border: 1px solid #dddddd;
+    }
+
+    .Addtional_Material .btn:hover, .Mission .btn:hover {
+        height: 50px;
+        width: 100%;
+        background: #325fbb;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .Addtional_Material .active, .Mission .active {
+        height: 50px;
+        width: 100%;
+        background: #325faa;
+        color: #ffffff;
+        cursor: default;
+    }
+
+    .Addtional_Material .active:hover, .Mission .active:hover {
+        height: 50px;
+        width: 100%;
+        background: #325fbb;
+        color: #ffffff;
+        cursor: default;
+    }
+
+    .contents .cont{
+        padding: 27px 30px 22px 30px
+    }
+}
+
+
+@media only screen and (min-width: 771px){
+
+}
